@@ -2,8 +2,7 @@ import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 
 
 import java.time.Duration;
@@ -16,6 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class CardDeliveryTest {
     LocalDate date = LocalDate.now().plusDays(4);
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+
 
     @BeforeEach
     void setUp() {
